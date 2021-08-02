@@ -1,1 +1,59 @@
-﻿
+﻿/*Header*/
+header h1, header p {
+    margin: 7px 0 7px 150px; /*This clears the text of the bg image area*/
+}
+
+header h1 {
+    text-align: left;
+    letter-spacing: 0.1em;
+    color: #477A5B;
+}
+
+header {
+    border-radius: 5px;
+}
+
+/*Site nav*/
+
+a {
+    color: teal;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+    a:hover, a:active, a:focus {
+        color: lightblue;
+        text-decoration: underline;
+        background-color: darkblue;
+    }
+
+nav a {
+    color: lightsalmon;
+}
+
+    nav a:hover, a:active, a:focus {
+        text-decoration: none;
+    }
+
+nav ul {
+    background-color: teal;
+}
+
+nav li:hover {
+    background-color: darkblue;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav ul li a {
+    padding: .4em;
+    display: block;
+}
+
+/*nav page highlighting*/
+
+.selected {
+    background-color: darkblue;
+}
