@@ -5,6 +5,7 @@
     <meta name="author" content="Brigham L. Lewis" />
     <meta name="keywords" content="education, project, FED1, centriq" />
     <title>Chefs Toolkit</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="CSS/custom.css" rel="stylesheet" />
 </head>
 
@@ -33,8 +34,65 @@
             <li class="selected">
                 <a href="contact.html">Contact</a>
             </li>
-
+            <li class="rightlink">
+                <a href="http://www.facebook.com/learnwithus" class="fa fa-facebook"></a>
+            </li>
+            <li class="rightlink">
+                <a href="https://twitter.com/weteachstuff" class="fa fa-twitter"></a>
+            </li>
+            <li class="rightlink">
+                <a href="http://www.linkedin.com/learnwithus" class="fa fa-linkedin"></a>
+            </li>
         </ul>
     </nav>
+    <main>
+        <article id="contact">
+            <div class="container">
+                <form action="#" method="get" onsubmit="validateForm(event)">
+
+                    <div class="form-group">
+                        <label for="firstname">First Name</label>
+                        <input type="text" id="idonefirstname" name="firstname" placeholder="Your name..">
+                        <span id="idfirstname" class="invalid"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lastname">Last Name</label>
+                        <input type="text" id="idonelastname" name="lastname" placeholder="Your last name..">
+                        <span id="idlastname" class="invalid"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="country">Country</label>
+                        <input type="text" id="idonecountry" name="country" placeholder="Your country..">
+                        <span id="idcountry" class="invalid"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="idonesubject" placeholder="Write something.." style="height:200px"></textarea>
+                        <span id="idsubject" class="invalid"></span>
+                    </div>
+
+                    <div class="form-group">
+                    <input type="submit" value="Send Message">
+                    </div>
+
+                </form>
+            </div>
+        </article>
+    </main>
+    <footer id="footer">
+
+        <p>
+            &copy; Copyright 2021 Brigham L. Lewis
+            <a href="http://www.facebook.com/learnwithus" class="fa fa-facebook"></a>
+            <a href="https://twitter.com/weteachstuff" class="fa fa-twitter"></a>
+            <a href="http://www.linkedin.com/learnwithus" class="fa fa-linkedin"></a>
+        </p>
+    </footer>
+    
+    <!-- Form Validation Script -->
+    <script src="JavaScript/validation.js"></script>
 </body>
 </html>

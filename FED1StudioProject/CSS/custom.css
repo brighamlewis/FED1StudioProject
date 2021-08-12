@@ -11,49 +11,408 @@ header h1 {
 
 header {
     border-radius: 5px;
+    background-color: #BDBDBD
+}
+
+#headerOverlay {
+    background-image: url(../Images/ChefToolkit.png);
+    background-repeat: no-repeat;
+    background-size: 120px;
+    background-position: 3% center; /*horizontal vertical*/
+    padding: 2em;
 }
 
 /*Site nav*/
 
 a {
-    color: teal;
+    color: #477A5B;
     font-weight: bold;
     text-decoration: none;
 }
 
-    a:hover, a:active, a:focus {
-        color: lightblue;
+    a:hover, a:active{
+        color: #477A5B;
         text-decoration: underline;
-        background-color: darkblue;
+        background-color: #BDBDBD;
+    }
+
+    a:focus {
+        color: #477A5B;
+        text-decoration: underline;
+        background-color: #BDBDBD;
     }
 
 nav a {
-    color: lightsalmon;
+    color: #BDBDBD;
+
 }
 
     nav a:hover, a:active, a:focus {
         text-decoration: none;
+
     }
 
 nav ul {
-    background-color: teal;
+    background-color: #477A5B;
+
 }
 
 nav li:hover {
-    background-color: darkblue;
+    background-color: #477A5B;
+
+}
+
+nav li.rightlink {
+    float: right;
 }
 
 nav li {
     display: inline-block;
+
 }
 
 nav ul li a {
     padding: .4em;
     display: block;
+
 }
+
+
 
 /*nav page highlighting*/
 
-.selected {
-    background-color: darkblue;
+.selected a{
+    background-color: #BDBDBD;
+    color: #477A5B;
+}
+
+/*About Us article*/
+#frontendDev section {
+    width: 85%;
+    margin: 0 auto;
+}
+
+#frontendDev section h3 {
+        margin: 10px 75px;
+}
+
+#frontendDev section p {
+        margin: 0 75px;
+}
+#logo {
+    float: left;
+    height: 200px;
+    margin-right: 20px;
+}
+/*Why Choose Us*/
+#whyChoose h1{
+    margin: 100px auto;
+    width: 40%;
+    text-align: center;
+}
+
+#whyChoose section.teaching h3{
+    margin-top: 100px;
+}
+
+#whyChoose section.teaching h3, #whyChoose section.teaching p {
+    float: right;
+    width: 40%;
+    margin-right: 50px;
+}
+
+#whyChoose section.teaching img{
+    float: left;
+    margin-left: 344px;
+}
+
+#whyChoose section.timing h3{
+    margin-top: 100px;
+}
+
+#whyChoose section.timing h3, #whyChoose section.timing p{
+    float: left;
+    width: 40%;
+    margin-left: 100px;
+}
+
+#whyChoose section.timing img{
+    float: right;
+    margin-right: 344px;
+}
+
+/*Footer*/
+#footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    background-color: #477A5B;
+    color: #BDBDBD;
+    padding-bottom: 16px;
+}
+
+#footer p{
+    margin-bottom: 5px;
+}
+
+#footer li {
+    text-decoration: none;
+}
+
+#footer p a {
+    float: right;
+}
+
+/*Classes Cards*/
+
+/* Float three columns side by side */
+.column {
+    float: left;
+    width: 20%;
+    margin-left: 200px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {
+    margin: 35px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+/* Style the counter cards */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+    width: 65%;
+}
+
+/*Table*/
+#myTable {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ddd;
+    font-size: 18px;
+    margin-top: 50px;
+}
+
+#myTable th, #myTable td {
+    text-align: left;
+    padding: 12px;
+}
+
+#myTable tr {
+    /* Add a bottom border to all table rows */
+    border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+    /* Add a grey background color to the table header and on hover */
+    background-color: #f1f1f1;
+}
+
+/*Contact Forms*/
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical /* Allows vertically resizing the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+/*Font Awesome for Social Media Icons*/
+/* Style all font awesome icons */
+.fa {
+    padding: 0;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+    /* Add a hover effect if you want */
+.fa:hover {
+        opacity: 0.7;
+    }
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #125688;
+    color: white;
+}
+
+/*Teams Page*/
+
+/*Team Pics Layout*/
+#teamPics {
+    float: left;
+    height: 200px;
+    margin: 10px 20px 20px 0;
+}
+
+/*Leadership article*/
+
+#leadership article {
+    margin-bottom: 100px;
+}
+
+#leadership h2 {
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+#leadership section {
+    width: 90%;
+    margin: 10px 100px 10px 100px;
+    float: left;
+
+}
+
+#leadership section h3 {
+        margin: 10px;
+}
+
+#leadership section p {
+        margin: 10px;
+}
+
+/*Instructors article*/
+
+#instructors article {
+    margin-bottom: 100px;
+}
+
+#instructors h2 {
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+#instructors section {
+    width: 90%;
+    margin: 10px 100px 20px 100px;
+    float: left;
+}
+
+#instructors section h3 {
+    margin: 10px;
+}
+
+#instructors section p {
+    margin: 10px 0 50px 0;
+}
+
+/*Sales Article*/
+
+#sales article {
+    margin-bottom: 100px;
+}
+
+#sales h2 {
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+#sales section {
+    width: 90%;
+    margin: 10px 100px 10px 100px;
+    float: left;
+}
+
+#sales section h3 {
+    margin: 10px;
+}
+
+#sales section p {
+    margin: 10px;
+}
+
+/*Admin and Support Article*/
+
+#adminTeam article {
+    margin-bottom: 100px;
+}
+
+#adminTeam h2 {
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+#adminTeam section {
+    width: 90%;
+    margin: 10px 100px 10px 100px;
+    float: left;
+}
+
+#adminTeam section h3 {
+    margin: 10px;
+}
+
+#adminTeam section p {
+    margin: 10px;
+}
+
+/*Teams Aside Setup*/
+
+#rightColumn {
+    width: 15%;
+    float: right;
+}
+#leftColumn {
+    width: 80%;
+    border-right: 5px solid #477A5B;
+}
+
+/*Form Validation*/
+.invalid {
+    color: red;
+    font-style: italic;
 }

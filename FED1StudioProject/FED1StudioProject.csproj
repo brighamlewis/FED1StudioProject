@@ -69,6 +69,28 @@
   <ItemGroup>
     <Content Include="contact.html" />
     <Content Include="CSS\custom.css" />
+    <Content Include="Images\AdvCookingApp.jpg" />
+    <Content Include="Images\AdvCookingTheory.jpg" />
+    <Content Include="Images\BegCookingApp.jpg" />
+    <Content Include="Images\BegCookingTheory.jpg" />
+    <Content Include="Images\ChefTeaching.jpg" />
+    <Content Include="Images\ChefToolkit.png" />
+    <Content Include="Images\ConnorMactavish.jpg" />
+    <Content Include="Images\FamilyTime.jpg" />
+    <Content Include="Images\GroverBriggs.jpg" />
+    <Content Include="Images\HarleyBlackwell.jpg" />
+    <Content Include="Images\IntermediateCookingApp.jpg" />
+    <Content Include="Images\IntermediateCookingTheory.jpg" />
+    <Content Include="Images\JesseKovacs.jpg" />
+    <Content Include="Images\JessicaPlatt.jpg" />
+    <Content Include="Images\JimHaliday.jpg" />
+    <Content Include="Images\JimminyCricket.jpg" />
+    <Content Include="Images\JohnTalcott.jpg" />
+    <Content Include="Images\KatherineLeblanc.jpg" />
+    <Content Include="Images\PeterSmith.jpg" />
+    <Content Include="Images\SaulJacobs.jpg" />
+    <Content Include="Images\ZackStark.jpg" />
+    <Content Include="JavaScript\validation.js" />
     <Content Include="team.html" />
     <Content Include="classes.html" />
     <Content Include="index.html" />
@@ -86,10 +108,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Images\" />
-    <Folder Include="JavaScript\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
